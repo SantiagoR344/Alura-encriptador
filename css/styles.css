@@ -1,0 +1,222 @@
+* {
+    
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    
+}
+.hdrnav{
+    
+    background-color: rgba(159, 179, 221, 0.541);
+    border-radius: 1rem;
+    width: 50%;
+}
+.logo {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    
+}
+section:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.secencript .buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.text-area {
+    height: 400px;
+    width: 400px;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 20px;
+    text-transform:lowercase;
+    border-color: #7c7c7c5b;
+    box-shadow: 10px 10px 10px 10px #ccc;
+    font-size: 30px;
+    border-radius: 20px;
+}
+::placeholder { color: #0A3871;   }
+  .text-area:focus {
+      outline: none;
+      border-color: #1f2022;
+      
+    }
+
+.mensaje{
+    display: inline-flex;
+    height: 670px;
+    width: 400px;
+    background: white;
+    background-image: url("/images/Muñeco.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: -30px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border-color: #7c7c7c65;
+    box-shadow: 10px 10px 10px 10px #ccc;
+    font-size: 30px;
+    
+}
+.mensaje:focus {
+    outline: none;
+    border-color: #1f2022;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 80%;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 80%;
+}
+
+.copiar {
+    position: relative;
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    
+    width: 180px;
+    bottom: 105px;
+    left: 200px;    
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
+.copyrigth {
+    font-family: 'Itim';
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(52, 3, 44);
+    height: 40px;
+    padding-top: 20px;
+    width: 90%;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .hdrnav {
+      width: 100%;
+    }
+    main {
+      flex-direction: column;
+    }
+    section:nth-child(1) {
+      width: 100%;
+    }
+    section:nth-child(2) {
+      width: 100%;
+      margin-top: 30px;
+    }
+    .text-area, .mensaje {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .botones {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-desencriptar, .btn-encriptar {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    .copiar {
+      left: 120px;
+      right: 0;
+      bottom: 150px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .hdrnav {
+      width: 100%;
+    }
+    .text-area, .mensaje {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .botones {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-desencriptar, .btn-encriptar {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    .copiar {
+      left: 40px;
+      right: 0;
+      bottom: 120px;
+      margin-top: 20px;
+    }
+  }
